@@ -2,6 +2,12 @@
 
 session_start();
 
+if(!isset($_SESSION['user'])) // retour à l'envoyeur si pas de variable session crée
+{
+    header('location: connexion');
+    exit();
+}
+
 // $reservation = new Reservation(connect());
 // $result = $reservation->get_reservation();
 

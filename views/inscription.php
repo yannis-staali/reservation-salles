@@ -14,7 +14,7 @@
             <!-- Main -->
         <main class="connexion_main"> 
             <section class="connexion_box_form">
-				<h1 class="title_register">Inscription</h1>
+				<h1 class="title_register">CREATE ACCOUNT</h1>
 				<form action="" method="POST">
 					
 					<div class="log_form">

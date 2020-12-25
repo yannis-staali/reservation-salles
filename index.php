@@ -43,6 +43,7 @@ if (in_array($page.'_controller.php', $allPages)) {
     //include_once 'views/'.$page.'_view.php';
     include_once 'views/'.$page.'.php';
 
+    // var_dump($_POST);
 } else {
 
     // Inclusion de la page erreur

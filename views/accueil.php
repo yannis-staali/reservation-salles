@@ -17,7 +17,7 @@
                 <h1>This is <br/><span class="blinking">Hazbin</span> <br/>Reservation</h1>
                 <div class="resa">
                 <h2>Want to have fun ?</h2>
-                <a class="book_home" href="#">Let's book a room !</a>
+                <a class="book_home" href="reservation-form">Let's book a room !</a>
                 </div>
             </section>
             <section class="blank2">
@@ -55,3 +55,9 @@
     </body>
     
 </html>
+<!-- 
+<style>
+.blank h1{
+    color: green ;
+}
+</style> -->

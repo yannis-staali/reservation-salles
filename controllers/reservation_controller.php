@@ -2,6 +2,12 @@
 session_start();
 //  var_dump($_GET);
 
+if(!isset($_SESSION['user'])) // retour à l'envoyeur si pas de variable session crée
+{
+    header('location: connexion');
+    exit();
+}
+
 $myId = $_GET['id'];
 //RECUP AVEC GET
 //  $db = mysqli_connect("localhost", "root", "", "reservationsalles");
