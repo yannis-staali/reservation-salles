@@ -13,21 +13,22 @@
         
             <!-- Main -->
         <main class="main_form_resa">
-            <section class="box_form">
+        <h1>Make a new reservation</h1>
+            <section class="resa_box_form">
                 <form action="#" method="post">
-                    <label for="titre">Titre:</label><br />
+                    <label for="titre">Title:</label><br />
                     <input type="text" name="titre"><br />
                     <label for="description">Description:</label><br />
                     <textarea id="description" name="description"></textarea><br />
-                    <label for="debut">Début:</label><br />
+                    <label for="debut">Begin:</label><br />
                     <input type="date" name="date-debut"><br />
-                    <label for="fin">Fin:</label><br />
+                    <label for="fin">End:</label><br />
                     <input type="date" name="date-fin"><br /><br />
-                    <label for="heure">Heure:</label><br />
+                    <label for="heure">Hour start:</label><br />
                     <input type="time" name="heure-debut"><br /><br />
-                    <label for="heure">Heure:</label><br />
+                    <label for="heure">Hour end:</label><br />
                     <input type="time" name="heure-fin"><br /><br />
-                    <input type="submit" name="submit" value="Réserver">
+                    <input type="submit" id="submit_resa" name="submit" value="Book">
                 </form>
             </section>
         </main>    
@@ -41,17 +42,3 @@
     
 </html>
 
-<style>
-.main_form_resa{
-    display:flex;
-    justify-content:center;
-    height: 85vh;
-   align-items: center;
-}
-.box_form{
-    background-color:  black;
-    padding: 10vh;
-    color: white;
-}
-
-</style>

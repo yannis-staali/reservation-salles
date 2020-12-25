@@ -45,58 +45,61 @@
         <?php include_once 'views/includes/header.php'?>
         
             <!-- Main -->
-        <main class="connexion_planing"> 
-        <table>
-        <thead>
-        <tr>
-            <th></th>
+        <main class="main_planning"> 
+            <h1>CURRENT PLANNING</h1>
+            <table class="planning_table">
+                <thead>
+                <tr>
+                    <th></th>
 
-            <th>Lundi</th>
+                    <th>Lundi</th>
 
-            <th>Mardi</th>
+                    <th>Mardi</th>
 
-            <th>Mercredi</th>
+                    <th>Mercredi</th>
 
-            <th>Jeudi</th>
+                    <th>Jeudi</th>
 
-            <th>Vendredi</th>
-        </tr>
-        </thead>
-        <tbody>
-        <?php
-       
-        for ($ligne = 8; $ligne <= 19; $ligne++) 
-        {
-                echo "<tr>";
-                echo "<td>" . $ligne . ' h' . "</td>";
-
-                for ($colonnes = 1; $colonnes <= 5; $colonnes++) 
-                {
-                        echo "<td>";
-                        foreach ($result as $value) 
-                        {
-                                $jour = date("w", strtotime($value[3]));
-                                $heure = date("H", strtotime($value[3]));
-                                if ($heure == $ligne && $jour == $colonnes) 
-                                {
-                                    echo $value[7] . ' ' . $value[1];               //A REVOIR
-                                     //echo "<br/><button><a href=reservation.php?id=".$value[0]. '> Voir</a></button>';
-                                     //echo "<br/><button><a href=reservation/".$value[0]. '> Voir</a></button>';
-                                   //echo "<br/><button><a href=?page=reservation?id=".$value[0].'> Voir</a></button>';
-                                   echo "<br/><button><a href=reservation?id=".$value[0]."> Voir</a></button>";
-
-                                    
-                                }
-                        }
-                        echo "</td>";
-                }
-        }
-    echo "</tr>";
-
-        ?>
-        </tbody>
-    </table>
+                    <th>Vendredi</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php
             
+                for ($ligne = 8; $ligne <= 19; $ligne++) 
+                {
+                        echo "<tr>";
+                        echo "<td>" . $ligne . ' h' . "</td>";
+
+                        for ($colonnes = 1; $colonnes <= 5; $colonnes++) 
+                        {
+                                echo "<td>";
+                                foreach ($result as $value) 
+                                {
+                                        $jour = date("w", strtotime($value[3]));
+                                        $heure = date("H", strtotime($value[3]));
+                                        if ($heure == $ligne && $jour == $colonnes) 
+                                        {
+                                            echo "<div class='resa_plan' ";
+                                            echo "<p class='planning_name'> $value[7] </p>" ;
+                                            echo "<p class='planning_title'> $value[1] </p>" ;               //A REVOIR
+                                            //echo "<br/><button><a href=reservation.php?id=".$value[0]. '> Voir</a></button>';
+                                            //echo "<br/><button><a href=reservation/".$value[0]. '> Voir</a></button>';
+                                            //echo "<br/><button><a href=?page=reservation?id=".$value[0].'> Voir</a></button>';
+                                            echo "<a class=\"planning_button\"href=reservation?id=".$value[0]."> show</a>";
+                                            echo "</div>";
+                                            
+                                        }
+                                }
+                                echo "</td>";
+                        }
+                }
+                echo "</tr>";
+                ?>
+
+                </tbody>
+            </table>
+            <a href="reservation-form" class="title_book">Book a room</a>
         </main>    
 
         <!-- Footer -->
@@ -108,19 +111,3 @@
     
 </html>
 
-<style>
-
-table tr td{
-    border: 1px solid white;
-}
-table th {
-    border: 1px solid white;
-}
-table{
-    border-collapse: collapse;
-    width: 100%;
-    height: 80vh;
-    color: white;
-    font-size: 2em;
-}
-</style>

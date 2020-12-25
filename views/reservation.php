@@ -16,14 +16,14 @@
            
             echo "<section class=\"resa_display\">";
 
-            echo "<table>";
+            echo "<table class='resa_id_table'>";
 
             echo "<tr>";
             echo "<th>" . "Login" . "</th>";
-            echo "<th>" . "Titre" . "</th>";
+            echo "<th>" . "Title" . "</th>";
             echo "<th>" . "Description" . "</th>";
-            echo "<th>" . "Début" . "</th>";
-            echo "<th>" . "Fin" . "</th>";
+            echo "<th>" . "Begin" . "</th>";
+            echo "<th>" . "End" . "</th>";
 
             foreach ($result as $value) {
                 echo "<tr>";
@@ -47,28 +47,3 @@
     
 </html>
 
-<style>
-table{
-    color: white;
-    width:80%;
-    height: 10vh;
-    border: 1px solid white;
-    border-collapse: collapse;
-    margin-top:10vh;
-    margin-bottom:65vh;
-    font-size:2em;
-    text-align:center;
-    background-color:black;
-   
-}
-table tr td{
-    border: 1px solid white;
-}
-table th{
-    border: 1px solid white;
-}
-.resa_display{
-    display:flex;
-    justify-content:center;
-}
-</style>

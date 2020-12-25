@@ -9,7 +9,7 @@
         <p>YAYA-PRODUCTION™</p>
     </section>
     <section class="foot_block3">
-        <p>FollowFollowFollow</p>
+        <p>Follow</p>
         <a href="#"><img class="social_foot1" src="assets/css/images/insta.png" alt="photo projet1"></a>
         <a href="#"><img class="social_foot2" src="assets/css/images/face.png" alt="photo projet1"></a>
         <a href="#"><img class="social_foot3" src="assets/css/images/youtube.png" alt="photo projet1"></a>

@@ -65,6 +65,7 @@ nav{
 }
 .brand span{
 	color: #E44E5C;
+	/* color: #47bd23; */
 }
 nav ul{
 	display: flex;
@@ -798,4 +799,186 @@ nav ul li a:hover::after{
 	font-size: 6em !important;
 	padding-top: 0 !important;
 	
+}
+/* SPECIFIQUE PAGE PLANNING ---------------- */
+.main_planning{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.planning_table{
+	margin-top:4vh;
+	width: 90vw;
+	background-color: rgba(0, 0, 0, 0.908);
+	text-align: center;
+}
+.planning_table tr td{
+	height:15vh;
+	
+}
+.planning_table p{
+	margin-bottom: 1vh;
+}
+.planning_button{
+	background-color: #E84A77;
+	padding: 0.15em;
+	border-radius: 0.4em;
+	margin-top: 2vh;
+}
+.planning_button:hover{
+	background-color: white;
+	color: #E84A77;
+}
+.resa_plan{
+	background-color: black;
+	width: max-content;
+	padding: 0.5em;
+	margin: auto;
+	border-radius: 0.5em;
+	border: 0.01em solid white;
+	box-shadow: 0.1vw 0.1vh 0.8vw white;
+}
+.main_planning h1{
+	color:white;
+	font-size: 4em;
+	margin-top: 2vh;
+	font-family: 'Bebas Neue', cursive;
+	text-shadow: 0.04em 0.06em 0.02em #E84A77;
+	background-color: black;
+	width: 25vw;
+	border-radius: 0.3em;
+	text-align: center;
+	padding: 0.4vh;
+	box-shadow: 0.1vw 0.1vh 0.8vw white;
+}
+table tr td{
+    border: 1px solid white;
+}
+table th {
+    border: 1px solid white;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    height: 80vh;
+    color: white;
+    font-size: 2em;
+}
+.title_book{
+	width: auto;
+	min-width: 15vw;
+	background-color: black;
+	color:white;
+	text-align: center;
+	text-shadow: 0.04em 0.06em 0.02em #E84A77;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 3em;
+	margin-top: 2vh;
+	padding: 0.2em;
+	border-radius: 0.5em;
+	box-shadow: 0.1vw 0.1vh 0.8vw white;
+}
+.title_book:hover{
+	background-color: white;
+	color: #E84A77;
+	text-shadow: 0.04em 0.06em 0.02em #040001;
+}
+/* SPECIFIQUE PAGE RESA-FORM ---------------- */
+.main_form_resa{
+	display:flex;
+	flex-direction: column;
+    justify-content:center;
+    /* height: 85vh; */
+   align-items: center;
+}
+.resa_box_form{
+	display: flex;
+    background-color:  black;
+    padding: 10vh;
+	color: white;
+	height: auto;
+	/* margin-top: 10vh; */
+	border-radius: 1em;
+	box-shadow: 0.1vw 0.1vh 0.8vw white;
+}
+.resa_box_form form{
+	display: flex;
+	flex-direction: column;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 1.5em;
+	text-shadow: 0.04em 0.06em 0.02em #E84A77;
+}
+.main_form_resa h1{
+	color:white;
+	font-size: 4em;
+	margin-top: 4vh;
+	margin-bottom: 4vh;
+	font-family: 'Bebas Neue', cursive;
+	text-shadow: 0.04em 0.06em 0.02em #E84A77;
+	background-color: black;
+	width: 25vw;
+	border-radius: 0.3em;
+	text-align: center;
+	padding: 0.4vh;
+	box-shadow: 0.1vw 0.1vh 0.8vw white;
+}
+#submit_resa{
+	
+	border-radius: 1em;
+	width: fit-content;
+	-webkit-border-radius: 25px;
+	-webkit-transition: all 0.5s ease;
+	background-color: #D63F30;
+	/* background-image: linear-gradient(90deg, #ffffff, #8e3eac); */
+	/* border-radius: 25px; */
+	border: 2px solid #aa168f;
+	box-shadow: #ffffff 0px 0px 10px;
+	color: #ffffff;
+	display: inline-block;
+	font-size: 1.5em;
+	/* margin: auto; */
+	padding: 0.4em 0.5em;
+
+	/* padding: 15px; */
+	text-decoration: none;
+	text-shadow: #000000 5px 5px 15px;
+	transition: all 0.5s ease;
+	font-family: 'Bebas Neue', cursive;
+	text-align: center;
+
+	transform: rotate(10deg);
+	cursor: grab;
+	margin-top: 1vh;
+}
+#submit_resa:hover{
+	background-color: #ffffff;
+	color: #D63F30;
+	text-shadow: none;
+	transform: rotate(360deg);
+}
+/* SPECIFIQUE PAGE RESERVATION ---------------- */
+.resa_id_table{
+    color: white;
+    width:80%;
+    height: 10vh;
+    border: 1px solid white;
+    border-collapse: collapse;
+    margin-top:10vh;
+    margin-bottom:65vh;
+    font-size:2em;
+    text-align:center;
+    background-color:black;
+   
+}
+.resa_id_table tr td{
+    border: 1px solid white;
+}
+.resa_id_tableth{
+    border: 1px solid white;
+}
+.resa_display{
+    display:flex;
+    justify-content:center;
 }
