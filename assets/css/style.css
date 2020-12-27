@@ -241,7 +241,8 @@ nav ul li a:hover::after{
   -webkit-text-fill-color: transparent; */
 
   font-weight: 400;
-  font-family: 'Bungee Outline', cursive;
+  /* font-family: 'Bungee Outline', cursive; */
+  font-family: 'Bungee Outline';
 }
 .resa{
 	/* background-color: turquoise;  */
@@ -759,7 +760,8 @@ nav ul li a:hover::after{
 	text-shadow: none;
 	transform: rotate(360deg);
 }
-/* SPECIFIQUE INSCRIPTION -------------------- */
+/* -////////-----//////////---------//////////////--- */
+/* SPECIFIQUE PAGE INSCRIPTION -------------------- */
 .pass_form2{
 	/* background-color: coral; */
 	display: flex;
@@ -794,12 +796,14 @@ nav ul li a:hover::after{
 	padding-top: 0 !important;
 	margin-top: 4vh !important;
 }
-/* SPECIFIQUE PROFIL -------------------- */
+/* -////////-----//////////---------//////////////--- */
+/* SPECIFIQUE PAGE PROFIL -------------------- */
 .title_profile{
 	font-size: 6em !important;
 	padding-top: 0 !important;
 	
 }
+/* -////////-----//////////---------//////////////--- */
 /* SPECIFIQUE PAGE PLANNING ---------------- */
 .main_planning{
 	display:flex;
@@ -813,6 +817,9 @@ nav ul li a:hover::after{
 	width: 90vw;
 	background-color: rgba(0, 0, 0, 0.908);
 	text-align: center;
+
+	font-family: 'Bebas Neue', cursive;
+	text-shadow: 0.04em 0.06em 0.02em #4d4ae8;
 }
 .planning_table tr td{
 	height:15vh;
@@ -847,6 +854,31 @@ nav ul li a:hover::after{
 	font-family: 'Bebas Neue', cursive;
 	text-shadow: 0.04em 0.06em 0.02em #E84A77;
 	background-color: black;
+	width: 30vw;
+	border-radius: 0.3em;
+	text-align: center;
+	padding: 0.4vh;
+	box-shadow: 0.1vw 0.1vh 0.8vw white;
+}
+.block_title_h1{
+	width: 100%;
+	/* background-color: blue; */
+	display: flex;
+	justify-content: center;
+}
+.block_title_h2{
+	width: 100%;
+	/* background-color: rgb(0, 255, 68); */
+	display: flex;
+	justify-content: center;
+}
+.main_planning h2{
+	color:white;
+	font-size: 4em;
+	margin-top: 2vh;
+	font-family: 'Bebas Neue', cursive;
+	text-shadow: 0.04em 0.06em 0.02em #4d4ae8;
+	background-color: black;
 	width: 25vw;
 	border-radius: 0.3em;
 	text-align: center;
@@ -864,7 +896,9 @@ table{
     width: 100%;
     height: 80vh;
     color: white;
-    font-size: 2em;
+	font-size: 2em;
+
+
 }
 .title_book{
 	width: auto;
@@ -885,6 +919,7 @@ table{
 	color: #E84A77;
 	text-shadow: 0.04em 0.06em 0.02em #040001;
 }
+/* -////////-----//////////---------//////////////--- */
 /* SPECIFIQUE PAGE RESA-FORM ---------------- */
 .main_form_resa{
 	display:flex;
@@ -958,27 +993,63 @@ table{
 	text-shadow: none;
 	transform: rotate(360deg);
 }
+/* -////////-----//////////---------//////////////--- */
 /* SPECIFIQUE PAGE RESERVATION ---------------- */
+.resa_display{
+	display:flex;
+	flex-direction: column;
+	/* flex-wrap: wrap; */
+	justify-content: center;
+	/* background-color: brown; */
+	/* height: 90vh; */
+}
+.title_resa_display{
+	color:white;
+	font-size: 5em;
+	margin: auto;
+	margin-top: 5vh;
+	margin-bottom: 6vh; 
+	font-family: 'Bebas Neue', cursive;
+	text-shadow: 0.04em 0.06em 0.02em #E84A77;
+	background-color: black;
+	width: 25vw;
+	border-radius: 0.3em;
+	text-align: center;
+	padding: 0.4vh;
+	box-shadow: 0.1vw 0.1vh 0.8vw white;
+}
 .resa_id_table{
     color: white;
-    width:80%;
-    height: 10vh;
+    width:40%;
+    /* height: 10vh; */
     border: 1px solid white;
     border-collapse: collapse;
-    margin-top:10vh;
-    margin-bottom:65vh;
-    font-size:2em;
+    /* margin-top:10vh; */
+    
+    font-size:3em;
     text-align:center;
-    background-color:black;
-   
+	background-color:black;
+	
+	font-family: 'Bebas Neue', cursive;
+	text-shadow: 0.04em 0.06em 0.02em #4d4ae8;
+	box-shadow: 0.1vw 0.1vh 0.8vw white;
+
+	margin: auto;
+	margin-bottom:30vh;
+	/* background-color: chartreuse; */
+	height: 60vh;
+	border-radius: 0.5em;
 }
+
 .resa_id_table tr td{
     border: 1px solid white;
 }
-.resa_id_tableth{
-    border: 1px solid white;
+.resa_id_table td{
+    width: 50%;
 }
-.resa_display{
-    display:flex;
-    justify-content:center;
+.resa_id_table tr{
+   height: 5vh;
+}
+.resa_id_table th{
+    border: 1px solid white;
 }

@@ -1,5 +1,12 @@
+<?php 
+//  echo '<pre>';
+//  var_dump($resa);
+//  echo '<pre>';
+?>
 <!DOCTYPE HTML>
-
+<!-- Ici le base href sert à changer la base de l'url relative pour pouvoir afficher le css et le js -->
+<!-- Après avoir réecrit l'url la source devient /reservation-salles/-->
+<base href="/reservation-salles/">
 <html>
 	<head>
 		<title>Planning</title>
@@ -12,31 +19,24 @@
         <?php include_once 'views/includes/header.php'?>
         
             <!-- Main -->
-<?php
-           
-            echo "<section class=\"resa_display\">";
+            <section class="resa_display">;
+                <h1 class="title_resa_display">RESERVATION DETAILS</h1>
+                    <?php
+                        echo "<table class='resa_id_table'>";
 
-            echo "<table class='resa_id_table'>";
+                        foreach ($resa as $value) 
+                        {
+                        echo "<tr>" ."<td>" . "Login" . "</td>" . "<td>" . $value['login'] . "</td>" . "</tr>";
+                        echo "<tr>" ."<td>" . "Title" . "</td>" . "<td>" . $value['titre'] . "</td>" . "</tr>";
+                        echo "<tr>" ."<td>" . "Description" . "</td>" . "<td>" . $value['description'] . "</td>" . "</tr>";
+                        echo "<tr>" ."<td>" . "Begin" . "</td>" . "<td>" . $value['debut'] . "</td>" . "</tr>";
+                        echo "<tr>" ."<td>" . "End" . "</td>" . "<td>" . $value['fin'] . "</td>" . "</tr>";
+                        }
 
-            echo "<tr>";
-            echo "<th>" . "Login" . "</th>";
-            echo "<th>" . "Title" . "</th>";
-            echo "<th>" . "Description" . "</th>";
-            echo "<th>" . "Begin" . "</th>";
-            echo "<th>" . "End" . "</th>";
+                        echo "</table>";
 
-            foreach ($result as $value) {
-                echo "<tr>";
-                echo "<td>" . "$value[0]" . "</td>";
-                echo "<td>" . "$value[1]" . "</td>";
-                echo "<td>" . "$value[2]" . "</td>";
-                echo "<td>" . "$value[3]" . "</td>";
-                echo "<td>" . "$value[4]" . "</td>";
-                echo "</tr>";
-            }
-            echo "</table>";
-            echo "</section>";
-?>
+                    ?>
+            </section>"
 
         <!-- Footer -->
         <?php include_once 'views/includes/footer.php'?>

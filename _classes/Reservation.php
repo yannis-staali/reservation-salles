@@ -12,14 +12,12 @@ private $pdo;
 
     public function get_reservation()
     { 
-        //modifier en cas la requete pour select que les elements necessaires
-        $request = $this->pdo->prepare("SELECT *  FROM reservations INNER JOIN utilisateurs ON reservations.id_utilisateur = utilisateurs.id");         
+        $request = $this->pdo->prepare("SELECT reservations.debut, reservations.titre, reservations.id, utilisateurs.login  FROM reservations INNER JOIN utilisateurs ON reservations.id_utilisateur = utilisateurs.id");         
         $request->execute();
-        $result = $request->fetchAll();
+        $result = $request->fetchAll(PDO::FETCH_ASSOC);
        
         return $result;
-    
-        // else return 'request failed';
+
     }
 
     public function insert_event($titre, $description, $debut, $fin, $id_utilisateur)
@@ -31,9 +29,12 @@ private $pdo;
 
     public function show_reservation($myId)
     {
-        $request = $this->pdo->prepare("SELECT login, titre, description, debut, fin FROM reservations INNER JOIN utilisateurs ON reservations.id_utilisateur = utilisateurs.id WHERE reservations.id =$myId");         
+        // $request = $this->pdo->prepare("SELECT login, titre, description, debut, fin FROM reservations INNER JOIN utilisateurs ON reservations.id_utilisateur = utilisateurs.id WHERE reservations.id =$myId");  
+        $request = $this->pdo->prepare("SELECT login, titre, description, DATE_FORMAT(debut, '%d/%m/%Y at %Hh') AS debut, DATE_FORMAT(fin, '%d/%m/%Y at %Hh') AS fin FROM reservations INNER JOIN utilisateurs ON reservations.id_utilisateur = utilisateurs.id WHERE reservations.id =$myId");         
+       
         $request->execute();
-        $result = $request->fetchAll();
+        // $result = $request->fetchAll();
+        $result = $request->fetchAll(PDO::FETCH_ASSOC);
 
         return $result;
     }

@@ -13,8 +13,8 @@ if (isset($_POST['submit']))
 
     $titre = htmlspecialchars($_POST['titre']);
     $description = htmlspecialchars($_POST['description']);
-    $debut = htmlspecialchars($_POST['date-debut']). " ".$_POST['heure-debut'];
-    $fin = htmlspecialchars($_POST['date-fin']). " ".$_POST['heure-fin'];
+    $debut = htmlspecialchars($_POST['date']). " ".$_POST['heure-debut'];
+    $fin = htmlspecialchars($_POST['date']). " ".$_POST['heure-fin'];
     $id_utilisateur = $_SESSION['user'];
 
     // $PDO = new PDO('mysql:host=localhost;dbname=reservationsalles', 'root', '');
