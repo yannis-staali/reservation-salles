@@ -14,7 +14,7 @@
             <!-- Main -->
         <main class="home_main"> 
             <section class="blank">
-                <h1>This is <br/><span class="blinking">Hazbin</span> <br/>Reservation</h1>
+                <h1>This is <br/><span class="blinking">Thrill</span> <br/>Reservation</h1>
                 <div class="resa">
                 <h2>Want to have fun ?</h2>
                 <a class="book_home" href="reservation-form">Let's book a room !</a>
@@ -24,7 +24,6 @@
                 <h2>We provide new style of accomodation...</h2>
                 <article class="first">
                     <div class="first_left">
-                        <!-- <img class="first_image" src="assets/css/images/purple1.jpg" alt="photo projet1"> -->
                     </div>
                     <div class="first_right">
                         <h3>Enter the Void</h3>
@@ -55,9 +54,3 @@
     </body>
     
 </html>
-<!-- 
-<style>
-.blank h1{
-    color: green ;
-}
-</style> -->

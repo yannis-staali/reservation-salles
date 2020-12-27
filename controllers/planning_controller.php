@@ -8,6 +8,6 @@ if(!isset($_SESSION['user'])) // retour à l'envoyeur si pas de variable session
     exit();
 }
 
-$reservation = new Reservation(connect());  //instanciation de Reservation
-$result = $reservation->get_reservation();  //methode permettant de recupérer les résa
+$reservation = new Reservation(connect());  //instanciation de la class Reservation
+$result = $reservation->get_reservation();  //methode permettant de recupérer les réservations
 ?>

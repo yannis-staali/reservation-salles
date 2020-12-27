@@ -23,11 +23,11 @@ $objet = new User(connect()); //INSTANCIATION
 
             if($check_fields==false)      
             {
-            $checkinlog = $objet->check_login_profil($login);
+            $checkinlog = $objet->check_login_profil($login); // verifie que le login n'existe pas deja
 
                   if($checkinlog==false)
                   {
-                  $checkinpass = $objet->check_same_password($password, $password2);
+                  $checkinpass = $objet->check_same_password($password, $password2); // mp identiques
                         
                         if($checkinpass==false)
                         {

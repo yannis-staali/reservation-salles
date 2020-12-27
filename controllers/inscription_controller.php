@@ -17,15 +17,15 @@ $objet = new User(connect()); //INSTANCIATION
 
             if($check_fields==false)
             {
-            $checkinlog = $objet->check_login_inscription($login);
+            $checkinlog = $objet->check_login_inscription($login); // on verifie que le login n'est pas deja pris
                 
                     if($checkinlog==false)
                     {    
-                    $checkinpass = $objet->check_same_password($password, $password2);
+                    $checkinpass = $objet->check_same_password($password, $password2); // on verifie que les md soient identiques
                     
                         if($checkinpass==false)
                         {
-                            $hached_pass = password_hash($password, PASSWORD_DEFAULT);
+                            $hached_pass = password_hash($password, PASSWORD_DEFAULT); // hachage
                             $insert = $objet->insert($login, $hached_pass);
                             header('location: connexion');
                             exit(); 

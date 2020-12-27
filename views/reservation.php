@@ -1,15 +1,10 @@
-<?php 
-//  echo '<pre>';
-//  var_dump($resa);
-//  echo '<pre>';
-?>
 <!DOCTYPE HTML>
 <!-- Ici le base href sert à changer la base de l'url relative pour pouvoir afficher le css et le js -->
 <!-- Après avoir réecrit l'url la source devient /reservation-salles/-->
 <base href="/reservation-salles/">
 <html>
 	<head>
-		<title>Planning</title>
+		<title>Reservation</title>
 		<?php include_once 'views/includes/head.php'?>
     </head>
     

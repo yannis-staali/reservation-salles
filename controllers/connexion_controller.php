@@ -15,15 +15,16 @@ $checkinpass = '';
       
         if($check_fields==false)
         {
-          $checkinlog = $objet->check_login($login);  
+          $checkinlog = $objet->check_login($login);  //verifie que le login est présent en bdd
           
-          $checkinpass = $objet->check_password($login, $password); // passord verify inclu
+          $checkinpass = $objet->check_password($login, $password); // password verify inclu
               
               if($checkinlog==false && $checkinpass==false)
               {
-                $getid = $objet->get_id($login);
-                $_SESSION['user'] = $getid;
-                header('location: profil');
+                $getid = $objet->get_id($login); // on recupere l'ID de l'utilisateur
+                $_SESSION['user'] = $getid; // on le stocke dans sa variable session
+                $_SESSION['welcome'] = $login;
+                header('location: welcome');
               }
         }
     }

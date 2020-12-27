@@ -1,4 +1,3 @@
 <?php
 
-// include_once '_classes/Members.php';
-// include_once '_classes/Articles.php';
+// Les models ne sont pas utilisés dans ce projet car tout est fait avec les controlleurs et les classes
