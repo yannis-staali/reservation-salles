@@ -15,7 +15,7 @@
         <main class="main_form_resa">
         <h1>Make a new reservation</h1>
             <section class="resa_box_form">
-                <form action="#" method="post">
+                <form action="" method="post">
                     <label for="titre">Title:</label><br />
                     <input type="text" name="titre"><br />
 
@@ -42,6 +42,13 @@
                     </select>
                     
                     <input type="submit" id="submit_resa" name="submit" value="Book">
+
+                    <?php if($check_fields==true) { echo $check_fields; exit(); } //affichage des messages d'erreur
+						if($check_point==true) { echo $check_point; }
+                        if($check_past==true) { echo $check_past; }
+                        if($check_weekend ==true) { echo $check_weekend; }
+                        if($check_book ==true) { echo $check_book; }
+					?>
                 </form>
             </section>
         </main>    

@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <!-- Ici le base href sert à changer la base de l'url relative pour pouvoir afficher le css et le js -->
 <!-- Après avoir réecrit l'url la source devient /reservation-salles/-->
-<base href="/reservation-salles/">
+<base href="<?= str_replace('index.php', '', $_SERVER['PHP_SELF']); ?>">
 <html>
 	<head>
 		<title>Reservation</title>

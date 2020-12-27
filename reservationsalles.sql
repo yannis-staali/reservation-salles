@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : Dim 27 déc. 2020 à 12:17
+-- Généré le : Dim 27 déc. 2020 à 18:07
 -- Version du serveur :  10.4.14-MariaDB
 -- Version de PHP : 7.4.10
 
@@ -64,7 +64,8 @@ INSERT INTO `reservations` (`id`, `titre`, `description`, `debut`, `fin`, `id_ut
 (47, 'new ', 'new', '2021-01-11 10:00:00', '2021-01-11 11:00:00', 7),
 (48, 'waiting', 'waiting', '2020-12-09 08:00:00', '2020-12-09 09:00:00', 7),
 (49, 'goooo', 'gooooo', '2021-01-08 11:00:00', '2021-01-08 12:00:00', 7),
-(50, 'again', 'again', '2021-01-12 11:00:00', '2021-01-12 12:00:00', 7);
+(55, 'xxxx', 'xxxx', '2020-12-28 08:00:00', '2020-12-28 09:00:00', 7),
+(57, 'zxzx', 'zxxx', '2021-01-28 17:00:00', '2021-01-28 18:00:00', 7);
 
 -- --------------------------------------------------------
 
@@ -89,7 +90,8 @@ INSERT INTO `utilisateurs` (`id`, `login`, `password`) VALUES
 (8, 'hazbin', '$2y$10$tYmPLINp9Zikq8vKO/AGxu8Bg9XYwFErHH1tRcYKv5auXxDM6yngG'),
 (9, 'toto', '$2y$10$onOdnNdMqMHfyJ10oz0csOmwHQX4dL.wKd/b4yEwL8Ar9kAjmRn9C'),
 (11, 'davidfincher', '$2y$10$NndhCuHB7ZzWQBStHWDgf.2FCf4W.5ET0MmF4JakDV9QYH8NK48ii'),
-(12, 'john', '$2y$10$Bxnz6pbTP5E/dqFhHsEnReWMrBMoGYuU1h8Guw40vyD5AuQbnpv7K');
+(12, 'john', '$2y$10$Bxnz6pbTP5E/dqFhHsEnReWMrBMoGYuU1h8Guw40vyD5AuQbnpv7K'),
+(13, 'saka', '$2y$10$LvDLw3EHJkbVDQ.KSI.GL.Ai2vyBB8CccepAIZOLeB6S/nHFRpCsm');
 
 --
 -- Index pour les tables déchargées
@@ -115,13 +117,13 @@ ALTER TABLE `utilisateurs`
 -- AUTO_INCREMENT pour la table `reservations`
 --
 ALTER TABLE `reservations`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
 -- AUTO_INCREMENT pour la table `utilisateurs`
 --
 ALTER TABLE `utilisateurs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
