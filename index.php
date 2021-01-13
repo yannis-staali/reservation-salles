@@ -30,6 +30,10 @@ else
 // Tableau contenant toutes les pages
 $allPages = scandir('controllers/');
 
+//echo'<pre>';
+//var_dump($allPages);
+//echo'<pre>';
+
 // Vérification de l'existence de la page
 if (in_array($page.'_controller.php', $allPages)) 
 {
